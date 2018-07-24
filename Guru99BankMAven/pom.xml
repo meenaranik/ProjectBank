@@ -36,14 +36,18 @@
   
   <distributionManagement>
     <repository>
-        <id>central</id>
-        <name>plugins-releases</name>
-        <url>http://localhost:8080/artifactory/plugins-release-local</url>
+      <uniqueVersion>false</uniqueVersion>
+      <id>Guru99BankMaven_Repository</id>
+      <name>Guru99BankMaven Applications Repository Internal</name>
+      <url>file://C:\Users\meena\.m2\repository</url>
+      <layout>default</layout>
     </repository>
     <snapshotRepository>
-        <id>snapshots</id>
-        <name>plugins-snapshot</name>
-        <url>http://localhost:8080/artifactory/plugins-snapshot-local</url>
+      <uniqueVersion>false</uniqueVersion>
+      <id>TestWebApp_Repository</id>
+      <name>TestWebApp Applications Repository Internal</name>
+      <url>file://C:\Users\meena\.m2\repository</url>
+      <layout>default</layout>
     </snapshotRepository>
-</distributionManagement>
+  </distributionManagement>
 </project>
