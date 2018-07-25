@@ -5,10 +5,17 @@
     <classes>
       <class name="com.test.bank.UserLogin">
         <methods>
+          <include name="miniStatement"/>
+          <include name="withdrawMoney"/>
           <include name="addNewCustomer"/>
+          <include name="fundTransfer"/>
+          <include name="balanceEnquiry"/>
+          <include name="userLoginTestCases"/>
           <include name="driverClose"/>
           <include name="editCustomer"/>
           <include name="launchBrowser"/>
+          <include name="checkIDDisplay"/>
+          <include name="depositMoney"/>
         </methods>
       </class> <!-- com.test.bank.UserLogin -->
     </classes>

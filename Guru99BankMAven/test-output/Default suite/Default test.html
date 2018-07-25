@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 23 09:11:26 BST 2018</td>
+<td>Started on:</td><td>Wed Jul 25 23:30:17 BST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>124 seconds (124888 ms)</td>
+<tr><td>Total time:</td><td>61 seconds (61726 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,220 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.test.bank.UserLogin.addNewCustomer()'><b>addNewCustomer</b><br>Test class: com.test.bank.UserLogin</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: New Customer
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;LAPTOP-JDJE2D7Q&apos;, ip: &apos;192.168.1.80&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\meena\AppData\Local\Temp\rust_mozprofile.VPsQOm0VWiEi, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.1, platformVersion=10.0, moz:processID=14204.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
-Session ID: 75371cfc-af15-4459-9a06-338af30a951f
-*** Element info: {Using=link text, value=New Customer}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at com.test.bean.NewCustomerPOM.addNewCustomer(NewCustomerPOM.java:89)
-	at com.test.bank.UserLogin.addNewCustomer(UserLogin.java:258)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace741191984", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace741191984'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: New Customer
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;LAPTOP-JDJE2D7Q&apos;, ip: &apos;192.168.1.80&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\meena\AppData\Local\Temp\rust_mozprofile.VPsQOm0VWiEi, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.1, platformVersion=10.0, moz:processID=14204.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
-Session ID: 75371cfc-af15-4459-9a06-338af30a951f
-*** Element info: {Using=link text, value=New Customer}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at com.test.bean.NewCustomerPOM.addNewCustomer(NewCustomerPOM.java:89)
-	at com.test.bank.UserLogin.addNewCustomer(UserLogin.java:258)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>30</td>
-<td>com.test.bank.UserLogin@242b836</td></tr>
-<tr>
-<td title='com.test.bank.UserLogin.editCustomer()'><b>editCustomer</b><br>Test class: com.test.bank.UserLogin</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Edit Customer
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;LAPTOP-JDJE2D7Q&apos;, ip: &apos;192.168.1.80&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\meena\AppData\Local\Temp\rust_mozprofile.VPsQOm0VWiEi, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.1, platformVersion=10.0, moz:processID=14204.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
-Session ID: 75371cfc-af15-4459-9a06-338af30a951f
-*** Element info: {Using=link text, value=Edit Customer}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at com.test.bank.UserLogin.editCustomer(UserLogin.java:360)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1818592781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1818592781'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Edit Customer
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;LAPTOP-JDJE2D7Q&apos;, ip: &apos;192.168.1.80&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\meena\AppData\Local\Temp\rust_mozprofile.VPsQOm0VWiEi, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.1, platformVersion=10.0, moz:processID=14204.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
-Session ID: 75371cfc-af15-4459-9a06-338af30a951f
-*** Element info: {Using=link text, value=Edit Customer}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at com.test.bank.UserLogin.editCustomer(UserLogin.java:360)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>30</td>
-<td>com.test.bank.UserLogin@242b836</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -289,30 +75,105 @@ Session ID: 75371cfc-af15-4459-9a06-338af30a951f
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.bank.UserLogin.checkIDDisplay()'><b>checkIDDisplay</b><br>Test class: com.test.bank.UserLogin</td>
+<td title='com.test.bank.UserLogin.addNewCustomer()'><b>addNewCustomer</b><br>Test class: com.test.bank.UserLogin</td>
+<td></td>
+<td>5</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.balanceEnquiry()'><b>balanceEnquiry</b><br>Test class: com.test.bank.UserLogin<br>Parameters: 40187, 40188, 1000, cash</td>
 <td></td>
 <td>1</td>
-<td>com.test.bank.UserLogin@242b836</td></tr>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
 <tr>
-<td title='com.test.bank.UserLogin.userLoginTestCases()'><b>userLoginTestCases</b><br>Test class: com.test.bank.UserLogin<br>Parameters: mngr125391, AnypEg</td>
+<td title='com.test.bank.UserLogin.balanceEnquiry()'><b>balanceEnquiry</b><br>Test class: com.test.bank.UserLogin<br>Parameters: 45788, 45789, 5000, cash</td>
 <td></td>
-<td>8</td>
-<td>com.test.bank.UserLogin@242b836</td></tr>
+<td>3</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
 <tr>
-<td title='com.test.bank.UserLogin.userLoginTestCases()'><b>userLoginTestCases</b><br>Test class: com.test.bank.UserLogin<br>Parameters: mngr12539, AnypEgu</td>
+<td title='com.test.bank.UserLogin.balanceEnquiry()'><b>balanceEnquiry</b><br>Test class: com.test.bank.UserLogin<br>Parameters: 40187, 40187, 50000, cash</td>
+<td></td>
+<td>1</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.checkIDDisplay()'><b>checkIDDisplay</b><br>Test class: com.test.bank.UserLogin</td>
+<td></td>
+<td>0</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.depositMoney()'><b>depositMoney</b><br>Test class: com.test.bank.UserLogin<br>Parameters: 40187, 40188, 1000, cash</td>
+<td></td>
+<td>1</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.depositMoney()'><b>depositMoney</b><br>Test class: com.test.bank.UserLogin<br>Parameters: 45788, 45789, 5000, cash</td>
+<td></td>
+<td>3</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.depositMoney()'><b>depositMoney</b><br>Test class: com.test.bank.UserLogin<br>Parameters: 40187, 40187, 50000, cash</td>
+<td></td>
+<td>1</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.editCustomer()'><b>editCustomer</b><br>Test class: com.test.bank.UserLogin</td>
 <td></td>
 <td>2</td>
-<td>com.test.bank.UserLogin@242b836</td></tr>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
 <tr>
-<td title='com.test.bank.UserLogin.userLoginTestCases()'><b>userLoginTestCases</b><br>Test class: com.test.bank.UserLogin<br>Parameters: mngr12539, AnypEg</td>
+<td title='com.test.bank.UserLogin.fundTransfer()'><b>fundTransfer</b><br>Test class: com.test.bank.UserLogin<br>Parameters: 40187, 40188, 1000, cash</td>
 <td></td>
 <td>2</td>
-<td>com.test.bank.UserLogin@242b836</td></tr>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
 <tr>
-<td title='com.test.bank.UserLogin.userLoginTestCases()'><b>userLoginTestCases</b><br>Test class: com.test.bank.UserLogin<br>Parameters: mngr136275, 1234!</td>
+<td title='com.test.bank.UserLogin.fundTransfer()'><b>fundTransfer</b><br>Test class: com.test.bank.UserLogin<br>Parameters: 45788, 45789, 5000, cash</td>
+<td></td>
+<td>3</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.fundTransfer()'><b>fundTransfer</b><br>Test class: com.test.bank.UserLogin<br>Parameters: 40187, 40187, 50000, cash</td>
+<td></td>
+<td>1</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.miniStatement()'><b>miniStatement</b><br>Test class: com.test.bank.UserLogin</td>
+<td></td>
+<td>3</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.userLoginTestCases()'><b>userLoginTestCases</b><br>Test class: com.test.bank.UserLogin<br>Parameters: mngr14467, zEtYmYs</td>
+<td></td>
+<td>3</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.userLoginTestCases()'><b>userLoginTestCases</b><br>Test class: com.test.bank.UserLogin<br>Parameters: mngr144670, zEtYmY</td>
 <td></td>
 <td>2</td>
-<td>com.test.bank.UserLogin@242b836</td></tr>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.userLoginTestCases()'><b>userLoginTestCases</b><br>Test class: com.test.bank.UserLogin<br>Parameters: mngr14467, zEtYmY</td>
+<td></td>
+<td>2</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.userLoginTestCases()'><b>userLoginTestCases</b><br>Test class: com.test.bank.UserLogin<br>Parameters: mngr144670, zEtYmYs</td>
+<td></td>
+<td>3</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.withdrawMoney()'><b>withdrawMoney</b><br>Test class: com.test.bank.UserLogin<br>Parameters: 40187, 40188, 1000, cash</td>
+<td></td>
+<td>1</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.withdrawMoney()'><b>withdrawMoney</b><br>Test class: com.test.bank.UserLogin<br>Parameters: 45788, 45789, 5000, cash</td>
+<td></td>
+<td>3</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
+<tr>
+<td title='com.test.bank.UserLogin.withdrawMoney()'><b>withdrawMoney</b><br>Test class: com.test.bank.UserLogin<br>Parameters: 40187, 40187, 50000, cash</td>
+<td></td>
+<td>1</td>
+<td>com.test.bank.UserLogin@3527942a</td></tr>
 </table><p>
 </body>
 </html>

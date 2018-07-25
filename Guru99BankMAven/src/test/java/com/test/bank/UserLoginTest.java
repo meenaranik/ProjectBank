@@ -16,6 +16,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -32,6 +33,7 @@ import org.testng.annotations.Test;
 
 import com.test.bean.*;
 import com.test.pagefactory.Guru99Login;
+import com.test.bank.*;
 
 
 
@@ -43,7 +45,7 @@ import com.test.pagefactory.Guru99Login;
  * The script uses TestNG
  * 
  */
-public class UserLogin {
+public class UserLoginTest {
 	
 	public static WebDriver driver; 
 	
@@ -53,21 +55,25 @@ public class UserLogin {
 	 */
 	@BeforeTest
 	
-	public static  void launchBrowser() throws Exception
+	public   void launchBrowser() throws Exception
 	{
 		
-		System.setProperty("webdriver.gecko.driver","C:\\Users\\meena\\eclipse-workspace\\STAInt\\src\\geckodriver.exe");
-	    File pathBinary = new File(Util.FIREFOX_PATH);
-	    FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);   
-	    
-	    //FirefoxProfile firefoxProfile = new FirefoxProfile();
-		//driver = new FirefoxDriver(firefoxBinary, firefoxProfile);
-	    DesiredCapabilities desired = DesiredCapabilities.firefox();
-	    FirefoxOptions options = new FirefoxOptions();
-	    desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
-	    desired.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
-	    
-	    driver = new FirefoxDriver(options);
+//		System.setProperty("webdriver.gecko.driver","C:\\Users\\meena\\eclipse-workspace\\STAInt\\src\\geckodriver.exe");
+//	    File pathBinary = new File(Util.FIREFOX_PATH);
+//	    FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);   
+//	    
+//	    //FirefoxProfile firefoxProfile = new FirefoxProfile();
+//		//driver = new FirefoxDriver(firefoxBinary, firefoxProfile);
+//	    DesiredCapabilities desired = DesiredCapabilities.firefox();
+//	    FirefoxOptions options = new FirefoxOptions();
+//	    desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
+//	    desired.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
+//	    
+//	    driver = new FirefoxDriver(options);
+//	    
+		 System.setProperty("webdriver.chrome.driver","C:\\chromedriver_win32\\chromedriver.exe");
+			
+		driver = new ChromeDriver();
 	    driver.get(Util.URL_PATH);
 	}
 	
@@ -131,7 +137,7 @@ public class UserLogin {
 	 * 
 	 * @throws Exception
 	 */
-	@Test(dataProvider = "Authentication")
+	@Test(dataProvider = "Authentication",priority= 1)
 	public void userLoginTestCases(String userName , String password ) throws InterruptedException {
 		// TODO Auto-generated method stub
 

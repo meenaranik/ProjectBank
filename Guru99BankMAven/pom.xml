@@ -3,14 +3,29 @@
   <groupId>Guru99BankMaven</groupId>
   <artifactId>Guru99BankMAven</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  
+  	<build>
+  	<pluginManagement>
+  	 <plugins>
+  	 <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>2.19.1</version>
+</plugin>
+      </plugins>
+      </pluginManagement>
+  </build>
   <properties>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
+    
+   
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	
   </properties>
+ 
   <dependencies>			
-       			
+       
         <dependency>				
             <groupId>org.seleniumhq.selenium</groupId>								
             <artifactId>selenium-java</artifactId>								
@@ -32,9 +47,16 @@
     <artifactId>poi</artifactId>
     <version>3.14</version>
 </dependency>
+
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-api</artifactId>
+    <version>2.0rc2</version>
+</dependency>
+
 </dependencies>
   
-  <distributionManagement>
+ <!--  <distributionManagement>
     <repository>
       <uniqueVersion>false</uniqueVersion>
       <id>Guru99BankMaven_Repository</id>
@@ -49,5 +71,5 @@
       <url>file://C:\Users\meena\.m2\repository</url>
       <layout>default</layout>
     </snapshotRepository>
-  </distributionManagement>
+  </distributionManagement> -->
 </project>
