@@ -36,6 +36,7 @@ public  class Util {
 	public static final String EXPECT_ERROR2 = "Please fill all fields";
 	public static final String EXPECT_ERROR3 = "Old Password is incorrect";
 	public static final String EXPECT_ERROR_FUNDTRANSFER= "does not exist!!";
+	public static final String EXPECT_ERROR_FUNDTRANSFER_CUSTOMER= "Customer does not exist!!";
 	public static final String EXPECT_ERROR_FUNDTRANSFER1= "Balance low!!";
 	public static final String EXPECT_ERROR_FUNDTRANSFER3= "Must Not Be Same!!!";
 	public static final String EXPECT_ERROR_FUNDTRANSFER4= "Transfer Funds from this account!!";

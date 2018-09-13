@@ -2,96 +2,96 @@
 <testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-07-25T22:30:17Z" name="Default suite" finished-at="2018-07-25T22:31:19Z" duration-ms="61726">
+  <suite started-at="2018-09-13T09:28:00Z" name="Default suite" finished-at="2018-09-13T09:29:00Z" duration-ms="59941">
     <groups>
     </groups>
-    <test started-at="2018-07-25T22:30:17Z" name="Default test" finished-at="2018-07-25T22:31:19Z" duration-ms="61726">
-      <class name="com.test.bank.UserLogin">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:17Z" name="launchBrowser" finished-at="2018-07-25T22:30:25Z" duration-ms="7694" status="PASS">
+    <test started-at="2018-09-13T09:28:00Z" name="Default test" finished-at="2018-09-13T09:29:00Z" duration-ms="59941">
+      <class name="com.test.bank.UserLoginTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:00Z" name="launchBrowser" finished-at="2018-09-13T09:28:18Z" duration-ms="17673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="userLoginTestCases(java.lang.String, java.lang.String)[pri:1, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:25Z" name="userLoginTestCases" data-provider="Authentication" finished-at="2018-07-25T22:30:28Z" duration-ms="3141" status="PASS">
+        <test-method signature="userLoginTestCases(java.lang.String, java.lang.String)[pri:1, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:18Z" name="userLoginTestCases" data-provider="Authentication" finished-at="2018-09-13T09:28:21Z" duration-ms="3221" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr14467]]>
+                <![CDATA[mngr149872]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[zEtYmYs]]>
+                <![CDATA[mAbuqy]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLoginTestCases -->
-        <test-method signature="userLoginTestCases(java.lang.String, java.lang.String)[pri:1, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:28Z" name="userLoginTestCases" data-provider="Authentication" finished-at="2018-07-25T22:30:31Z" duration-ms="2512" status="PASS">
+        <test-method signature="userLoginTestCases(java.lang.String, java.lang.String)[pri:1, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:21Z" name="userLoginTestCases" data-provider="Authentication" finished-at="2018-09-13T09:28:24Z" duration-ms="2639" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr144670]]>
+                <![CDATA[mngr14987]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[zEtYmY]]>
+                <![CDATA[mAbuqyt]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLoginTestCases -->
-        <test-method signature="userLoginTestCases(java.lang.String, java.lang.String)[pri:1, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:31Z" name="userLoginTestCases" data-provider="Authentication" finished-at="2018-07-25T22:30:33Z" duration-ms="2549" status="PASS">
+        <test-method signature="userLoginTestCases(java.lang.String, java.lang.String)[pri:1, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:24Z" name="userLoginTestCases" data-provider="Authentication" finished-at="2018-09-13T09:28:26Z" duration-ms="2513" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr14467]]>
+                <![CDATA[mngr14987]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[zEtYmY]]>
+                <![CDATA[mAbuqy]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLoginTestCases -->
-        <test-method signature="userLoginTestCases(java.lang.String, java.lang.String)[pri:1, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:33Z" name="userLoginTestCases" data-provider="Authentication" finished-at="2018-07-25T22:30:36Z" duration-ms="3100" status="PASS">
+        <test-method signature="userLoginTestCases(java.lang.String, java.lang.String)[pri:1, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:26Z" name="userLoginTestCases" data-provider="Authentication" finished-at="2018-09-13T09:28:29Z" duration-ms="3172" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr144670]]>
+                <![CDATA[mngr149872]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[zEtYmYs]]>
+                <![CDATA[mAbuqyt]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLoginTestCases -->
-        <test-method signature="checkIDDisplay()[pri:2, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:36Z" name="checkIDDisplay" finished-at="2018-07-25T22:30:37Z" duration-ms="703" status="PASS">
+        <test-method signature="checkIDDisplay()[pri:2, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:29Z" name="checkIDDisplay" finished-at="2018-09-13T09:28:30Z" duration-ms="607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIDDisplay -->
-        <test-method signature="addNewCustomer()[pri:3, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:37Z" name="addNewCustomer" finished-at="2018-07-25T22:30:43Z" duration-ms="5716" status="PASS">
+        <test-method signature="addNewCustomer()[pri:3, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:30Z" name="addNewCustomer" finished-at="2018-09-13T09:28:34Z" duration-ms="4486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewCustomer -->
-        <test-method signature="miniStatement()[pri:4, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:43Z" name="miniStatement" finished-at="2018-07-25T22:30:46Z" duration-ms="3617" status="PASS">
+        <test-method signature="miniStatement()[pri:4, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:34Z" name="miniStatement" finished-at="2018-09-13T09:28:36Z" duration-ms="1637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- miniStatement -->
-        <test-method signature="editCustomer()[pri:5, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:46Z" name="editCustomer" finished-at="2018-07-25T22:30:49Z" duration-ms="2533" status="PASS">
+        <test-method signature="editCustomer()[pri:5, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:36Z" name="editCustomer" finished-at="2018-09-13T09:28:38Z" duration-ms="1441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editCustomer -->
-        <test-method signature="depositMoney(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:49Z" name="depositMoney" data-provider="Account No" finished-at="2018-07-25T22:30:51Z" duration-ms="1655" status="PASS">
+        <test-method signature="depositMoney(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:38Z" name="depositMoney" data-provider="AccountNo" finished-at="2018-09-13T09:28:39Z" duration-ms="1483" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- depositMoney -->
-        <test-method signature="depositMoney(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:51Z" name="depositMoney" data-provider="Account No" finished-at="2018-07-25T22:30:54Z" duration-ms="3787" status="PASS">
+        <test-method signature="depositMoney(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:39Z" name="depositMoney" data-provider="AccountNo" finished-at="2018-09-13T09:28:41Z" duration-ms="1672" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,7 +143,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- depositMoney -->
-        <test-method signature="depositMoney(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:54Z" name="depositMoney" data-provider="Account No" finished-at="2018-07-25T22:30:56Z" duration-ms="1335" status="PASS">
+        <test-method signature="depositMoney(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:41Z" name="depositMoney" data-provider="AccountNo" finished-at="2018-09-13T09:28:42Z" duration-ms="1404" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -169,7 +169,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- depositMoney -->
-        <test-method signature="withdrawMoney(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:56Z" name="withdrawMoney" data-provider="Account No" finished-at="2018-07-25T22:30:58Z" duration-ms="1792" status="PASS">
+        <test-method signature="withdrawMoney(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:42Z" name="withdrawMoney" data-provider="AccountNo" finished-at="2018-09-13T09:28:44Z" duration-ms="1642" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -195,7 +195,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- withdrawMoney -->
-        <test-method signature="withdrawMoney(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:30:58Z" name="withdrawMoney" data-provider="Account No" finished-at="2018-07-25T22:31:01Z" duration-ms="3726" status="PASS">
+        <test-method signature="withdrawMoney(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:44Z" name="withdrawMoney" data-provider="AccountNo" finished-at="2018-09-13T09:28:45Z" duration-ms="1499" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -221,7 +221,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- withdrawMoney -->
-        <test-method signature="withdrawMoney(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:31:01Z" name="withdrawMoney" data-provider="Account No" finished-at="2018-07-25T22:31:03Z" duration-ms="1457" status="PASS">
+        <test-method signature="withdrawMoney(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:45Z" name="withdrawMoney" data-provider="AccountNo" finished-at="2018-09-13T09:28:47Z" duration-ms="1424" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -247,7 +247,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- withdrawMoney -->
-        <test-method signature="fundTransfer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:31:03Z" name="fundTransfer" data-provider="Account No" finished-at="2018-07-25T22:31:05Z" duration-ms="2769" status="PASS">
+        <test-method signature="fundTransfer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:47Z" name="fundTransfer" data-provider="AccountNo" finished-at="2018-09-13T09:28:49Z" duration-ms="1943" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -273,7 +273,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fundTransfer -->
-        <test-method signature="fundTransfer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:31:05Z" name="fundTransfer" data-provider="Account No" finished-at="2018-07-25T22:31:09Z" duration-ms="3409" status="PASS">
+        <test-method signature="fundTransfer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:49Z" name="fundTransfer" data-provider="AccountNo" finished-at="2018-09-13T09:28:51Z" duration-ms="2422" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -299,7 +299,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fundTransfer -->
-        <test-method signature="fundTransfer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:31:09Z" name="fundTransfer" data-provider="Account No" finished-at="2018-07-25T22:31:11Z" duration-ms="1749" status="PASS">
+        <test-method signature="fundTransfer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:51Z" name="fundTransfer" data-provider="AccountNo" finished-at="2018-09-13T09:28:53Z" duration-ms="2141" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -325,7 +325,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fundTransfer -->
-        <test-method signature="balanceEnquiry(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:31:11Z" name="balanceEnquiry" data-provider="Account No" finished-at="2018-07-25T22:31:13Z" duration-ms="1926" status="PASS">
+        <test-method signature="balanceEnquiry(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:53Z" name="balanceEnquiry" data-provider="AccountNo" finished-at="2018-09-13T09:28:55Z" duration-ms="1436" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -351,7 +351,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- balanceEnquiry -->
-        <test-method signature="balanceEnquiry(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:31:13Z" name="balanceEnquiry" data-provider="Account No" finished-at="2018-07-25T22:31:16Z" duration-ms="3639" status="PASS">
+        <test-method signature="balanceEnquiry(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:55Z" name="balanceEnquiry" data-provider="AccountNo" finished-at="2018-09-13T09:28:56Z" duration-ms="1043" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -377,7 +377,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- balanceEnquiry -->
-        <test-method signature="balanceEnquiry(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:31:16Z" name="balanceEnquiry" data-provider="Account No" finished-at="2018-07-25T22:31:17Z" duration-ms="1039" status="PASS">
+        <test-method signature="balanceEnquiry(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:56Z" name="balanceEnquiry" data-provider="AccountNo" finished-at="2018-09-13T09:28:57Z" duration-ms="1027" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -403,11 +403,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- balanceEnquiry -->
-        <test-method is-config="true" signature="driverClose()[pri:0, instance:com.test.bank.UserLogin@3527942a]" started-at="2018-07-25T22:31:17Z" name="driverClose" finished-at="2018-07-25T22:31:19Z" duration-ms="1728" status="PASS">
+        <test-method is-config="true" signature="driverClose()[pri:0, instance:com.test.bank.UserLoginTest@5d534f5d]" started-at="2018-09-13T09:28:57Z" name="driverClose" finished-at="2018-09-13T09:29:00Z" duration-ms="3352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverClose -->
-      </class> <!-- com.test.bank.UserLogin -->
+      </class> <!-- com.test.bank.UserLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

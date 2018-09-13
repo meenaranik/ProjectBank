@@ -24,16 +24,17 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-
 import com.test.bean.*;
-import com.test.pagefactory.Guru99Login;
-import com.test.bank.*;
+import com.test.pagefactory.*;
+
+
 
 
 
@@ -87,10 +88,10 @@ public class UserLoginTest {
 		 
 		
 		//return  new Object[][]  {{"mngr144670","zEtYmYs"}};
-		return new Object[][] {{"mngr14467","zEtYmYs"},
-								{"mngr144670","zEtYmY"},
-								{"mngr14467","zEtYmY"},
-								{"mngr144670","zEtYmYs"}
+		return new Object[][] {{"mngr149872","mAbuqy"},
+								{"mngr14987","mAbuqyt"},
+								{"mngr14987","mAbuqy"},
+								{"mngr149872","mAbuqyt"}
 			
 		
 		};
@@ -115,9 +116,45 @@ public class UserLoginTest {
 
 	}
 	
-	@DataProvider(name= "Account No")
+	@DataProvider(name= "AccountNo")
 	public static Object[][] accountNoDetails() throws Exception
 	{
+		Object[][] groupArray =  new Object[0][0];
+	/*	for (String group : c.getIncludedGroups())
+		{
+			if(group.equalsIgnoreCase("A"))
+			{
+				groupArray = new Object[][] { 
+					{"40187","40188","1000","cash"},					
+					{"45788","45789","5000","cash"},
+					{"40187","40187","50000","cash"}
+						
+					};
+			break;	
+			}
+			else if(group.equalsIgnoreCase("B"))
+				{
+				groupArray = new Object[][] { 
+					
+					{"40187","1000","cash"},
+					{"45788","5000","cash"},
+					{"40187","50000","cash"}
+						};
+						break;
+				}
+				else if(group.equalsIgnoreCase("B")) 
+				{
+					groupArray = new Object[][] { 
+						
+						{"40187"},
+						{"45788"},
+						{"40187"}
+							};
+							break;
+				}
+			
+		}
+		return groupArray;*/
 		return  new Object[][]  {{"40187","40188","1000","cash"},
 								
 								{"45788","45789","5000","cash"},
@@ -352,10 +389,10 @@ public class UserLoginTest {
 			
 			System.out.println(actualBoxtitle); 
 			if (actualBoxtitle.contains(Util.EXPECT_ERROR_FUNDTRANSFER)||actualBoxtitle.endsWith(Util.EXPECT_ERROR_FUNDTRANSFER1)||
-					actualBoxtitle.endsWith(Util.EXPECT_ERROR_FUNDTRANSFER3)) 
+					actualBoxtitle.endsWith(Util.EXPECT_ERROR_FUNDTRANSFER3)||actualBoxtitle.endsWith(Util.EXPECT_ERROR_FUNDTRANSFER_CUSTOMER)) 
 			{ // Compare Error Text with Expected Error Value
 			    System.out.println("Error Test case Passed alert"); 
-			    Util.takeSnapShot(driver, "C://Users//meena//eclipse-workspace//ProjectBankTestNG//Good Records.png"); 
+			    //Util.takeSnapShot(driver, "C://Users//meena//eclipse-workspace//ProjectBankTestNG//Good Records.png"); 
 			}
 			alt.accept();
 		}    
@@ -370,9 +407,10 @@ public class UserLoginTest {
 				alt.accept();
 				System.out.println("Error Test case Passed1"); 
 				if (actualBoxtitle.endsWith(Util.EXPECT_ERROR_FUNDTRANSFER)||actualBoxtitle.endsWith(Util.EXPECT_ERROR_FUNDTRANSFER1)||
-						actualBoxtitle.endsWith(Util.EXPECT_ERROR_FUNDTRANSFER3)||actualBoxtitle.endsWith(Util.EXCEPT_ERROR_EDITCUSTOMER_MSG1)) 
+						actualBoxtitle.endsWith(Util.EXPECT_ERROR_FUNDTRANSFER3)||actualBoxtitle.endsWith(Util.EXCEPT_ERROR_EDITCUSTOMER_MSG1)||
+						actualBoxtitle.endsWith(Util.EXPECT_ERROR_FUNDTRANSFER_CUSTOMER)) 
 				{ // Compare Error Text with Expected Error Value
-				    System.out.println("Error Test case Passed2"); 
+				    System.out.println("Error Test case Passed Edit customer"); 
 				}
 			} 
 	    	catch(NoAlertPresentException EX)
@@ -390,10 +428,13 @@ public class UserLoginTest {
 		
 	}
 	
-	@Test(priority = 6,dataProvider = "Account No")
+	@Test(priority = 6,dataProvider = "AccountNo")
 	//SM24 deposit Money
 	public void depositMoney(String srcAccount,String destAccount,String amount,String desc)throws Exception
 	{
+		
+		System.out.println("In deposit Money");
+		
 		driver.findElement(By.linkText("Deposit")).click();
 		driver.findElement(By.name("accountno")).sendKeys(srcAccount);
 		
@@ -428,7 +469,7 @@ public class UserLoginTest {
 	
 	
 	
-	@Test(priority = 7,dataProvider = "Account No")
+	@Test(priority = 7,dataProvider = "AccountNo")
 	//SM24 deposit Money
 	public void withdrawMoney(String srcAccount,String destAccount,String amount,String desc)throws Exception
 	{
@@ -467,7 +508,7 @@ public class UserLoginTest {
         } 
 	}
 	
-	@Test(priority = 8,dataProvider = "Account No")
+	@Test(priority = 8,dataProvider = "AccountNo")
 		//SM19,SM16,SM21,SM22,SM17,SM20
 		public void fundTransfer(String srcAccount,String destAccount,String amount,String desc)throws Exception
 		{
@@ -501,7 +542,7 @@ public class UserLoginTest {
 			
 		}
 		
-		@Test(priority = 9,dataProvider = "Account No")
+		@Test(priority = 9,dataProvider = "AccountNo")
 		//SM27 - SM30 deposit Money
 		public void balanceEnquiry(String srcAccount,String destAccount,String amount,String desc)throws Exception
 		{
