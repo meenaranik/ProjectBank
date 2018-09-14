@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.bank.mavenexample.NewTest"/>
+      <class name="com.test.bank.UserLogin"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

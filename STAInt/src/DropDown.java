@@ -16,7 +16,7 @@ public class DropDown
    
      // WebDriver driver = new FirefoxDriver();
       
-      System.setProperty("webdriver.gecko.driver","C:\\Users\\meena\\eclipse-workspace\\STAInt\\src\\geckodriver.exe");
+      System.setProperty("webdriver.gecko.driver","C:\\geckodriver-v0.19.1-win64\\geckodriver.exe");
       File pathBinary = new File("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
       FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);   
       DesiredCapabilities desired = DesiredCapabilities.firefox();
