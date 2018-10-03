@@ -1,6 +1,7 @@
 package com.stepdefinition;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -31,6 +32,10 @@ public class Test_Steps {
 		
 		
 		driver.get("https://www.youtube.com");
+		System.out.println("x");
+		
+	    driver.findElement(By.id("search")).sendKeys("Remo");
+	    driver.findElement(By.id("search-icon-legacy")).click();
 	    
 	}
 
