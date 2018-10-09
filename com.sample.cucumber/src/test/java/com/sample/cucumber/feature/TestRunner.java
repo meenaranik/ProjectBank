@@ -8,6 +8,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/test/resources/Feature"
 		,glue={"com.stepdefinition"}
+		,format= {"pretty"}
+		,monochrome=true
 		)
  
 public class TestRunner {
